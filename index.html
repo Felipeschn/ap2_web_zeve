@@ -7,12 +7,6 @@
     <body>
       <div class="loginbox">
         <h1>Login</h1>
-        <?php
-        if(isset($_SESSION['mensagem'])) {
-          echo $_SESSION['mensagem'];
-          unset($_SESSION['mensagem']);
-        }
-        ?>
         <form action="getUser.php" method="GET">
           <p>Usuários</p>
           <input type="text" name="" />
