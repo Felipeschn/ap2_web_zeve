@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="caixa">
+        <h1>Cadastro</h1>
+      </div>
+    </header>
+    <main>
+        <div class="loginbox">
+            <form action="createUser.php" method="POST">
+                <label for="nomesobrenome">Username</label>
+                <input
+                type="text"
+                name="user"
+                id="user"
+                class="input-default"
+                required
+                />
+                <label for="nomesobrenome">Senha</label>
+                <input
+                type="password"
+                name="senha"
+                id="senha"
+                class="input-default"
+                required
+                />
+                <label for="nomesobrenome">Nome completo</label>
+                <input
+                type="text"
+                name="nome"
+                id="nomesobrenome"
+                class="input-default"
+                required
+                />
+
+                <label for="email">E-mail</label>
+                <input
+                type="text"
+                id="email"
+                class="input-default"
+                name="email"
+                required
+                />
+
+                <label for="telefone">Telefone</label>
+                <input
+                type="text"
+                name="telefone"
+                id="telefone"
+                class="input-default"
+                required
+                />
+                <label for="telefone">Estado</label>
+                <input
+                type="text"
+                name="estado"
+                id="estado"
+                class="input-default"
+                required
+                />
+                <label for="telefone">Cidade</label>
+                <input
+                type="text"
+                name="cidade"
+                id="cidade"
+                class="input-default"
+                required
+                />
+                <input type="submit" value="Enviar" class="botao-enviar" />
+            </form>
+        </div>
+    </main>
+    </body>
+  </body>
+</html>

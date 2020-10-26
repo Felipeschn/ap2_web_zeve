@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <body>
+      <div class="loginbox">
+        <h1>Login</h1>
+        <?php
+        if(isset($_SESSION['mensagem'])) {
+          echo $_SESSION['mensagem'];
+          unset($_SESSION['mensagem']);
+        }
+        ?>
+        <form action="getUser.php" method="GET">
+          <p>Usuários</p>
+          <input type="text" name="" />
+          <p>Senha</p>
+          <input type="password" name="" placeholder="*****" />
+          <input type="submit" name="" href="./getUser.php" value="Login" />
+          <a href="./index.php">Limpar campos</a><br />
+          <a href="./cadastroUsuarios.php">Criar conta</a>
+        </form>
+      </div>
+    </body>
+  </head>
+</html>
